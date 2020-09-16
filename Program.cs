@@ -68,7 +68,7 @@ namespace csharpi
             if (message.Author.Id == _client.CurrentUser.Id)
                 return;
 
-            if (message.Content == "test ?")
+            if (message.Content == "bonjour")
             {
                 await message.Channel.SendMessageAsync("Non tu te tais toi");
             }  
