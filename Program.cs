@@ -71,7 +71,24 @@ namespace csharpi
             if (message.Content == "bonjour")
             {
                 await message.Channel.SendMessageAsync("Non tu te tais toi");
-            }  
-        }
+            } 
+
+            if (message.Content == "partage")
+            {
+                await message.Channel.SendMessageAsync(message + 
+                "LE PARTAGE");
+            }
+
+            if (message.Content == "partagé")
+            {
+                await message.Channel.SendMessageAsync(message + " LE PARTAGE");
+            }
+
+            if (message.Content == "share")
+            {
+                await message.Channel.SendMessageAsync("LE PARTAGE");
+            }
+        }   
+
     }
 }
